@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"  layout:decorate="~{layout/main}">
+<body>
+<div layout:fragment="content">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form th:action="@{/fileStore/save-upload}" method="post" enctype="multipart/form-data">
+            <label>File</label>
+            <input type="file" accept="img/jpeg , img/png" class="form-control" name="file">
+            <input type="submit" value="upload">
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

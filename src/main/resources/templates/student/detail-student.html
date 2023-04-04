@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"  layout:decorate="~{layout/main}">
+<body>
+<div layout:fragment="content">
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Thong tin Sinh Vien</h2>
+        <span th:utext="${student.id}"></span>|
+        <span th:utext="${student.firstName}"></span>|
+        <span th:utext="${student.lastName}"></span>|
+        <span th:utext="${student.email}"></span>|
+        <span th:utext="${student.phone}"></span>|
+        <span th:utext="${student.siteClass.id}"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
